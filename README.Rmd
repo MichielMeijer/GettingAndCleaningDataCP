@@ -1,0 +1,53 @@
+---
+title: "README.Rmd"
+author: "Michiel Meijer"
+date: "16 juli 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+#Peer-graded Assignment: Getting and Cleaning Data Course Project
+This project is written as an assignment on the Getting and Cleaning Data Course. This project is designed to give per activity and per subject the mean of all means and standard deviations in the project of  Davide Anguita&co [1]. Please read their README.txt for more information (see chapter Prerequisites).
+It all leads to a tidy dataset called "mean_per_variable.txt".
+
+#Getting Started
+These instructions will get you a copy of the project up and running on your local machine for testing purposes.
+
+#Prerequisites
+Things you need to install:  
+1. Install R  and R studio  
+2. Install package "dplyr" in R(studio)  
+3. These arre the raw data, download and unzip this file into to your         working directory: 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
+4. Of course there also is a code book for this project. See github.  
+5. And the script to run the project "run_analysis.R". Also see github.
+
+#Installing
+Get the script "run_analysis.R" 
+
+##Deployment
+Run the script "run_analysis.R" in Rstudio.
+
+##Built With
+• RStudio
+
+##Contributing
+Out of the question ;) since this there will be no further development on this project after I pass the course. 
+
+##Versioning
+Just this one version I hope :)
+
+##Authors
+•Michiel Meijer, as a student at Coursera
+
+##Acknowledgments
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+[2] The Coursera "Getting and Cleaning Data Course"
+
+[3] PurpleBooth for the README template used for this README.Rmd: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2

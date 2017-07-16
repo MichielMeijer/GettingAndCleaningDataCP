@@ -1,0 +1,101 @@
+#Code book for de Coursera project of Getting and Cleaning data
+
+##Explaining the variables in "mean_per_variable.txt"
+
+Taken from "features_info.txt" which is a part of the raw data:
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+##Description per variable
+
+Variable name | Description
+------------------- | ----------------------------------------------
+activity_or_subject | Tells whether this row concerns an activity or a subject
+Name	|	The name of the activity or the number of the subject
+tBodyAcc-mean()-X	|	The mean per activity or subject of the mean of tBodyAcc in direction X
+tBodyAcc-mean()-Y	|	The mean per activity or subject of the mean of tBodyAcc in direction Y
+tBodyAcc-mean()-Z	|	The mean per activity or subject of the mean of tBodyAcc in direction Z
+tGravityAcc-mean()-X	|	The mean per activity or subject of the mean of tGravityAcc in direction X
+tGravityAcc-mean()-Y	|	The mean per activity or subject of the mean of tGravityAcc in direction Y
+tGravityAcc-mean()-Z	|	The mean per activity or subject of the mean of tGravityAcc in direction Z
+tBodyAccJerk-mean()-X	|	The mean per activity or subject of the mean of tBodyAccJerk in direction X
+tBodyAccJerk-mean()-Y	|	The mean per activity or subject of the mean of tBodyAccJerk in direction Y
+tBodyAccJerk-mean()-Z	|	The mean per activity or subject of the mean of tBodyAccJerk in direction Z
+tBodyGyro-mean()-X	|	The mean per activity or subject of the mean of tBodyGyro in direction X
+tBodyGyro-mean()-Y	|	The mean per activity or subject of the mean of tBodyGyro in direction Y
+tBodyGyro-mean()-Z	|	The mean per activity or subject of the mean of tBodyGyro in direction Z
+tBodyGyroJerk-mean()-X	|	The mean per activity or subject of the mean of tBodyGyroJerk- in direction X
+tBodyGyroJerk-mean()-Y	|	The mean per activity or subject of the mean of tBodyGyroJerk- in direction Y
+tBodyGyroJerk-mean()-Z	|	The mean per activity or subject of the mean of tBodyGyroJerk- in direction Z
+tBodyAccMag-mean()	|	The mean per activity or subject of the mean of tBodyAccMag
+tGravityAccMag-mean()	|	The mean per activity or subject of the mean of tGravityAccMag
+tBodyAccJerkMag-mean()	|	The mean per activity or subject of the mean of tBodyAccJerkMag
+tBodyGyroMag-mean()	|	The mean per activity or subject of the mean of tBodyGyroMag
+tBodyGyroJerkMag-mean()	|	The mean per activity or subject of the mean of tBodyGyroJerkMag
+fBodyAcc-mean()-X	|	The mean per activity or subject of the mean of fBodyAcc in direction X
+fBodyAcc-mean()-Y	|	The mean per activity or subject of the mean of fBodyAcc in direction Y
+fBodyAcc-mean()-Z	|	The mean per activity or subject of the mean of fBodyAcc in direction Z
+fBodyAcc-meanFreq()-X	|	The mean per activity or subject of the meanFrequancy of fBodyAcc in direction X
+fBodyAcc-meanFreq()-Y	|	The mean per activity or subject of the meanFrequancy of fBodyAcc in direction Y
+fBodyAcc-meanFreq()-Z	|	The mean per activity or subject of the meanFrequancy of fBodyAcc in direction Z
+fBodyAccJerk-mean()-X	|	The mean per activity or subject of the mean of fBodyAccJerk in direction X
+fBodyAccJerk-mean()-Y	|	The mean per activity or subject of the mean of fBodyAccJerk in direction Y
+fBodyAccJerk-mean()-Z	|	The mean per activity or subject of the mean of fBodyAccJerk in direction Z
+fBodyAccJerk-meanFreq()-X	|	The mean per activity or subject of the meanFrequancy of fBodyAccJerk in direction X
+fBodyAccJerk-meanFreq()-Y	|	The mean per activity or subject of the meanFrequancy of fBodyAccJerk in direction Y
+fBodyAccJerk-meanFreq()-Z	|	The mean per activity or subject of the meanFrequancy of fBodyAccJerk in direction Z
+fBodyGyro-mean()-X	|	The mean per activity or subject of the mean of fBodyGyro in direction X
+fBodyGyro-mean()-Y	|	The mean per activity or subject of the mean of fBodyGyro in direction Y
+fBodyGyro-mean()-Z	|	The mean per activity or subject of the mean of fBodyGyro in direction Z
+fBodyGyro-meanFreq()-X	|	The mean per activity or subject of the meanFrequancy of fBodyGyro in direction X
+fBodyGyro-meanFreq()-Y	|	The mean per activity or subject of the meanFrequancy of fBodyGyro in direction Y
+fBodyGyro-meanFreq()-Z	|	The mean per activity or subject of the meanFrequancy of fBodyGyro in direction Z
+fBodyAccMag-mean()	|	The mean per activity or subject of the mean of fBodyAccMag
+fBodyAccMag-meanFreq()	|	The mean per activity or subject of the meanFrequancy of fBodyAccMag
+fBodyBodyAccJerkMag-mean()	|	The mean per activity or subject of the mean of fBodyBodyAccJerkMag
+fBodyBodyAccJerkMag-meanFreq()	|	The mean per activity or subject of the meanFrequancy of fBodyBodyAccJerkMag
+fBodyBodyGyroMag-mean()	|	The mean per activity or subject of the mean of fBodyBodyGyroMag
+fBodyBodyGyroMag-meanFreq()	|	The mean per activity or subject of the meanFrequancy of fBodyBodyGyroMag
+fBodyBodyGyroJerkMag-mean()	|	The mean per activity or subject of the mean of fBodyBodyGyroJerkMag
+fBodyBodyGyroJerkMag-meanFreq()	|	The mean per activity or subject of the meanFrequancy of fBodyBodyGyroJerkMag
+tBodyAcc-std()-X	|	The mean per activity or subject of the standard deviation of tBodyAcc in direction X
+tBodyAcc-std()-Y	|	The mean per activity or subject of the standard deviation of tBodyAcc in direction Y
+tBodyAcc-std()-Z	|	The mean per activity or subject of the standard deviation of tBodyAcc in direction Z
+tGravityAcc-std()-X	|	The mean per activity or subject of the standard deviation of tGravityAcc in direction X
+tGravityAcc-std()-Y	|	The mean per activity or subject of the standard deviation of tGravityAcc in direction Y
+tGravityAcc-std()-Z	|	The mean per activity or subject of the standard deviation of tGravityAcc in direction Z
+tBodyAccJerk-std()-X	|	The mean per activity or subject of the standard deviation of tBodyAccJerk in direction X
+tBodyAccJerk-std()-Y	|	The mean per activity or subject of the standard deviation of tBodyAccJerk in direction Y
+tBodyAccJerk-std()-Z	|	The mean per activity or subject of the standard deviation of tBodyAccJerk in direction Z
+tBodyGyro-std()-X	|	The mean per activity or subject of the standard deviation of tBodyGyro in direction X
+tBodyGyro-std()-Y	|	The mean per activity or subject of the standard deviation of tBodyGyro in direction Y
+tBodyGyro-std()-Z	|	The mean per activity or subject of the standard deviation of tBodyGyro in direction Z
+tBodyGyroJerk-std()-X	|	The mean per activity or subject of the standard deviation of tBodyGyroJerk in direction X
+tBodyGyroJerk-std()-Y	|	The mean per activity or subject of the standard deviation of tBodyGyroJerk in direction Y
+tBodyGyroJerk-std()-Z	|	The mean per activity or subject of the standard deviation of tBodyGyroJerk in direction Z
+tBodyAccMag-std()	|	The mean per activity or subject of the standard deviation of tBodyAccMag
+tGravityAccMag-std()	|	The mean per activity or subject of the standard deviation of tGravityAccMag
+tBodyAccJerkMag-std()	|	The mean per activity or subject of the standard deviation of tBodyAccJerkMag
+tBodyGyroMag-std()	|	The mean per activity or subject of the standard deviation of tBodyGyroMag
+tBodyGyroJerkMag-std()	|	The mean per activity or subject of the standard deviation of tBodyGyroJerkMag
+fBodyAcc-std()-X	|	The mean per activity or subject of the standard deviation of fBodyAcc in direction X
+fBodyAcc-std()-Y	|	The mean per activity or subject of the standard deviation of fBodyAcc in direction Y
+fBodyAcc-std()-Z	|	The mean per activity or subject of the standard deviation of fBodyAcc in direction Z
+fBodyAccJerk-std()-X	|	The mean per activity or subject of the standard deviation of fBodyAccJerk in direction X
+fBodyAccJerk-std()-Y	|	The mean per activity or subject of the standard deviation of fBodyAccJerk in direction Y
+fBodyAccJerk-std()-Z	|	The mean per activity or subject of the standard deviation of fBodyAccJerk in direction Z
+fBodyGyro-std()-X	|	The mean per activity or subject of the standard deviation of fBodyGyro in direction X
+fBodyGyro-std()-Y	|	The mean per activity or subject of the standard deviation of fBodyGyro in direction Y
+fBodyGyro-std()-Z	|	The mean per activity or subject of the standard deviation of fBodyGyro in direction Z
+fBodyAccMag-std()	|	The mean per activity or subject of the standard deviation of fBodyAccMag
+fBodyBodyAccJerkMag-std()	|	The mean per activity or subject of the standard deviation of fBodyBodyAccJerkMag
+fBodyBodyGyroMag-std()	|	The mean per activity or subject of the standard deviation of fBodyBodyGyroMag
+fBodyBodyGyroJerkMag-std()	|	The mean per activity or subject of the standard deviation of fBodyBodyGyroJerkMag
+
